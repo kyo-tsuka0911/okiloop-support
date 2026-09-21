@@ -3,33 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>おきるープ サポート</title>
+    <meta
+        name="description"
+        content="iPhone向け目覚ましアプリ「おきるープ」の公式サポートページです。"
+    >
+
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Helvetica Neue",
+                "Hiragino Sans",
+                "Yu Gothic",
+                sans-serif;
+            line-height: 1.8;
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        main {
+            width: min(760px, calc(100% - 32px));
+            margin: 48px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 2rem;
+            line-height: 1.4;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        ul {
+            padding-left: 1.4rem;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .subtitle {
+            margin-top: 0;
+            color: #666666;
+        }
+
+        .card {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f7f7f8;
+            border-radius: 14px;
+        }
+
+        .button-link {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 10px 16px;
+            border-radius: 10px;
+            background: #007aff;
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .button-link:hover {
+            text-decoration: none;
+            opacity: 0.88;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #dddddd;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000000;
+                color: #f5f5f7;
+            }
+
+            main {
+                background: #1c1c1e;
+                box-shadow: none;
+            }
+
+            .subtitle,
+            footer {
+                color: #a1a1a6;
+            }
+
+            .card {
+                background: #2c2c2e;
+            }
+
+            a {
+                color: #64a8ff;
+            }
+
+            footer {
+                border-top-color: #3a3a3c;
+            }
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 20px auto;
+                padding: 24px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>おきるープ サポート</h1>
+<main>
+    <header>
+        <h1>おきるープ サポート</h1>
+        <p class="subtitle">
+            二度寝対策のためのiPhone向け目覚ましアプリ
+        </p>
+    </header>
 
-    <p>
-        「おきるープ」は、二度寝対策を目的としたiPhone向け目覚ましアプリです。
-    </p>
+    <section>
+        <h2>おきるープについて</h2>
 
-    <h2>お問い合わせ</h2>
-    <p>
-        アプリに関するご質問・不具合報告などは、以下のメールアドレスまでお願いいたします。
-    </p>
+        <p>
+            「おきるープ」は、朝の二度寝を防ぐことを目的とした
+            iPhone向け目覚ましアプリです。
+        </p>
 
-    <p>
-        <a href="mailto:okiloop.support@gmail.com">
-            okiloop.support@gmail.com
+        <p>
+            通常のアラームとして利用できる「通常モード」に加えて、
+            Stopしたあとも再びアラームを鳴らす
+            「しっかり起床モード」を利用できます。
+        </p>
+
+        <p>
+            しっかり起床モードでは、交通系ICカードなどのNFCカードや
+            バーコードを「完全停止キー」として登録し、
+            指定した場所まで移動してアラームを完全停止するといった使い方ができます。
+        </p>
+    </section>
+
+    <section>
+        <h2>対応環境</h2>
+
+        <div class="card">
+            <ul>
+                <li>iPhone</li>
+                <li>iOS 26.0以降</li>
+            </ul>
+        </div>
+
+        <p>
+            iPad、Mac、Apple Vision Proは正式なサポート対象ではありません。
+        </p>
+    </section>
+
+    <section>
+        <h2>お問い合わせ</h2>
+
+        <p>
+            アプリに関するご質問、不具合のご報告、ご意見などは、
+            以下のメールアドレスまでお願いいたします。
+        </p>
+
+        <p>
+            <strong>おきるープ サポート</strong><br>
+            <a href="mailto:okiloop.support@gmail.com">
+                okiloop.support@gmail.com
+            </a>
+        </p>
+
+        <p>
+            お問い合わせの際は、必要に応じて以下の情報を添えていただけると、
+            状況の確認がしやすくなります。
+        </p>
+
+        <ul>
+            <li>使用しているiPhoneの機種</li>
+            <li>iOSのバージョン</li>
+            <li>発生した問題の内容</li>
+            <li>問題が発生するまでに行った操作</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>プライバシーポリシー</h2>
+
+        <p>
+            おきるープにおけるユーザー情報の取り扱いについては、
+            以下のページをご確認ください。
+        </p>
+
+        <a class="button-link" href="privacy.html">
+            プライバシーポリシーを見る
         </a>
-    </p>
+    </section>
 
-    <h2>プライバシーポリシー</h2>
-    <p>
-        <a href="privacy.html">プライバシーポリシーはこちら</a>
-    </p>
+    <section>
+        <h2>音素材について</h2>
 
-    <hr>
+        <p>
+            本アプリの一部の内蔵アラーム音には、
+            OtoLogicの音素材を使用しています。
+        </p>
 
-    <p>開発者：塚本恭平</p>
+        <p>
+            音素材：
+            <a
+                href="https://otologic.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                OtoLogic
+            </a>
+            （CC BY 4.0）
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            開発者：塚本恭平
+        </p>
+
+        <p>
+            © 2026 塚本恭平
+        </p>
+    </footer>
+</main>
 </body>
 </html>
