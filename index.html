@@ -2,270 +2,76 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>おきるープ サポート</title>
-    <meta
-        name="description"
-        content="iPhone向け目覚ましアプリ「おきるープ」の公式サポートページです。"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="iPhone向け目覚ましアプリ「おきるープ」のサポート情報、対応環境、お問い合わせ窓口をご案内します。">
+    <title>おきるープ｜サポート</title>
     <style>
         :root {
             color-scheme: light dark;
+            --bg: #f5f5f7; --text: #1d1d1f; --muted: #55555c;
+            --line: #d5d5dc; --accent: #005ec4; --button: #005ec4;
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Helvetica Neue",
-                "Hiragino Sans",
-                "Yu Gothic",
-                sans-serif;
-            line-height: 1.8;
-            background: #f5f5f7;
-            color: #1d1d1f;
-        }
-
-        main {
-            width: min(760px, calc(100% - 32px));
-            margin: 48px auto;
-            padding: 40px;
-            background: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-        }
-
-        h1 {
-            margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 2rem;
-            line-height: 1.4;
-        }
-
-        h2 {
-            margin-top: 40px;
-            font-size: 1.3rem;
-        }
-
-        p {
-            margin: 12px 0;
-        }
-
-        ul {
-            padding-left: 1.4rem;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .subtitle {
-            margin-top: 0;
-            color: #666666;
-        }
-
-        .card {
-            margin-top: 20px;
-            padding: 20px;
-            background: #f7f7f8;
-            border-radius: 14px;
-        }
-
-        .button-link {
-            display: inline-block;
-            margin-top: 8px;
-            padding: 10px 16px;
-            border-radius: 10px;
-            background: #007aff;
-            color: #ffffff;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .button-link:hover {
-            text-decoration: none;
-            opacity: 0.88;
-        }
-
-        footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid #dddddd;
-            color: #666666;
-            font-size: 0.9rem;
-        }
-
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; overflow-wrap: anywhere; }
+        main { width: min(720px, calc(100% - 40px)); margin: 48px auto; }
+        header { padding-bottom: 28px; }
+        h1 { margin: 0; font-size: 2rem; line-height: 1.4; }
+        h2 { margin: 0 0 16px; font-size: 1.3rem; line-height: 1.5; }
+        p { margin: 12px 0; }
+        .subtitle, footer { color: var(--muted); }
+        nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; }
+        section { padding: 28px 0; border-top: 1px solid var(--line); }
+        ul { margin: 12px 0; padding-left: 1.5em; }
+        a { color: var(--accent); text-underline-offset: 4px; }
+        a:hover { text-decoration-thickness: 2px; }
+        a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+        .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 18px; border-radius: 8px; background: var(--button); color: #fff; font-weight: 600; text-decoration: none; }
+        .button:hover { text-decoration: underline; }
+        footer { padding: 24px 0; border-top: 1px solid var(--line); font-size: .9rem; }
         @media (prefers-color-scheme: dark) {
-            body {
-                background: #000000;
-                color: #f5f5f7;
-            }
-
-            main {
-                background: #1c1c1e;
-                box-shadow: none;
-            }
-
-            .subtitle,
-            footer {
-                color: #a1a1a6;
-            }
-
-            .card {
-                background: #2c2c2e;
-            }
-
-            a {
-                color: #64a8ff;
-            }
-
-            footer {
-                border-top-color: #3a3a3c;
-            }
+            :root { --bg: #171719; --text: #f5f5f7; --muted: #b5b5bd; --line: #414147; --accent: #8abaff; --button: #005ec4; }
         }
-
-        @media (max-width: 600px) {
-            main {
-                margin: 20px auto;
-                padding: 24px;
-                border-radius: 16px;
-            }
-
-            h1 {
-                font-size: 1.7rem;
-            }
-        }
+        @media (max-width: 600px) { main { margin: 28px auto; } section { padding: 24px 0; } }
     </style>
 </head>
-
 <body>
 <main>
     <header>
-        <h1>おきるープ サポート</h1>
-        <p class="subtitle">
-            二度寝対策のためのiPhone向け目覚ましアプリ
-        </p>
+        <h1>おきるープ</h1>
+        <p class="subtitle">二度寝対策のためのiPhone向け目覚ましアプリ｜サポート</p>
+        <nav aria-label="ページ内案内"><a href="#contact">お問い合わせ</a><a href="#environment">対応環境</a><a href="privacy.html">プライバシーポリシー</a></nav>
     </header>
-
-    <section>
-        <h2>おきるープについて</h2>
-
-        <p>
-            「おきるープ」は、朝の二度寝を防ぐことを目的とした
-            iPhone向け目覚ましアプリです。
-        </p>
-
-        <p>
-            通常のアラームとして利用できる「通常モード」に加えて、
-            Stopしたあとも再びアラームを鳴らす
-            「しっかり起床モード」を利用できます。
-        </p>
-
-        <p>
-            しっかり起床モードでは、交通系ICカードなどのNFCカードや
-            バーコードを「完全停止キー」として登録し、
-            指定した場所まで移動してアラームを完全停止するといった使い方ができます。
-        </p>
+    <section aria-labelledby="about-title">
+        <h2 id="about-title">おきるープについて</h2>
+        <p>通常の目覚ましとして使える「通常モード」と、Stopしたあとも設定した間隔で再び鳴る「しっかり起床モード」を備えています。</p>
+        <p>しっかり起床モードでは、対応するICカード・NFCタグ・バーコードを「完全停止キー」として登録できます。キーを離れた場所に置けば、そこまで移動してアラームを完全停止する使い方ができます。</p>
+        <p>しっかり起床モードのStopは、完全停止ではありません。アプリを開き、登録した完全停止キーを読み取ってください。</p>
     </section>
-
-    <section>
-        <h2>対応環境</h2>
-
-        <div class="card">
-            <ul>
-                <li>iPhone</li>
-                <li>iOS 26.0以降</li>
-            </ul>
-        </div>
-
-        <p>
-            iPad、Mac、Apple Vision Proは正式なサポート対象ではありません。
-        </p>
+    <section id="environment" aria-labelledby="environment-title">
+        <h2 id="environment-title">対応環境</h2>
+        <ul><li>iPhone／iOS 26.0以降</li><li>アラームの利用には、アラームのアクセス許可が必要です。</li><li>バーコードの読み取りには、カメラのアクセス許可が必要です。</li></ul>
+        <p>ICカード・NFCタグは、種類や状態によって登録できない場合があります。すべてのカード・タグへの対応を保証するものではありません。</p>
+        <p>iPad、Mac、Apple Vision Proは正式なサポート対象ではありません。</p>
     </section>
-
-    <section>
-        <h2>お問い合わせ</h2>
-
-        <p>
-            アプリに関するご質問、不具合のご報告、ご意見などは、
-            以下のメールアドレスまでお願いいたします。
-        </p>
-
-        <p>
-            <strong>おきるープ サポート</strong><br>
-            <a href="mailto:okiloop.support@gmail.com">
-                okiloop.support@gmail.com
-            </a>
-        </p>
-
-        <p>
-            お問い合わせの際は、必要に応じて以下の情報を添えていただけると、
-            状況の確認がしやすくなります。
-        </p>
-
-        <ul>
-            <li>使用しているiPhoneの機種</li>
-            <li>iOSのバージョン</li>
-            <li>発生した問題の内容</li>
-            <li>問題が発生するまでに行った操作</li>
-        </ul>
+    <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">お問い合わせ</h2>
+        <p>ご質問、不具合のご報告、ご意見は、おきるープ サポートまでお寄せください。</p>
+        <p><a href="mailto:okiloop.support@gmail.com">okiloop.support@gmail.com</a></p>
+        <p>不具合をご報告いただく際は、分かる範囲で以下をお知らせください。</p>
+        <ul><li>iPhoneの機種</li><li>iOSとアプリのバージョン</li><li>問題の内容と発生までの操作</li><li>通常モード／しっかり起床モードのどちらで発生したか</li></ul>
+        <p>スクリーンショットを添付する場合は、個人情報が写っていないかご確認ください。カード番号やパスワードなどの送付は不要です。</p>
     </section>
-
-    <section>
-        <h2>プライバシーポリシー</h2>
-
-        <p>
-            おきるープにおけるユーザー情報の取り扱いについては、
-            以下のページをご確認ください。
-        </p>
-
-        <a class="button-link" href="privacy.html">
-            プライバシーポリシーを見る
-        </a>
+    <section aria-labelledby="privacy-title">
+        <h2 id="privacy-title">プライバシーポリシー</h2>
+        <p>アプリにおける情報の取り扱いについては、プライバシーポリシーをご確認ください。</p>
+        <a class="button" href="privacy.html">プライバシーポリシーを見る</a>
     </section>
-
-    <section>
-        <h2>音素材について</h2>
-
-        <p>
-            本アプリの一部の内蔵アラーム音には、
-            OtoLogicの音素材を使用しています。
-        </p>
-
-        <p>
-            音素材：
-            <a
-                href="https://otologic.jp/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                OtoLogic
-            </a>
-            （CC BY 4.0）
-        </p>
+    <section aria-labelledby="credits-title">
+        <h2 id="credits-title">音素材</h2>
+        <p>一部の内蔵アラーム音には、OtoLogicの素材を使用しています。アプリでの使用に合わせて音量・ループ境界等を調整しています。</p>
+        <p>音素材：<a href="https://otologic.jp/">OtoLogic</a>（<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC BY 4.0</a>）</p>
     </section>
-
-    <footer>
-        <p>
-            開発者：塚本恭平
-        </p>
-
-        <p>
-            © 2026 塚本恭平
-        </p>
-    </footer>
+    <footer><p>運営・お問い合わせ：おきるープ サポート<br>© 2026 おきるープ</p></footer>
 </main>
 </body>
 </html>
